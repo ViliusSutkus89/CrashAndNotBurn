@@ -30,7 +30,7 @@ on:
 permissions:
   actions: none
   checks: none
-  contents: none
+  contents: write
   deployments: none
   issues: none
   packages: none
