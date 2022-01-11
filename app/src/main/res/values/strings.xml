@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Crash and not Burn</string>
+    <string name="worker_notification_channel_id">CHANNEL_ID_123</string>
+    <string name="worker_notification_channel_name">Remote worker notifications</string>
+    <string name="worker_notification_channel_description">Remote worker notifications</string>
+
+    <string name="crash_worker_notification_title">Crash Worker in progress</string>
+    <string name="noncrash_worker_notification_title">Non Crash Worker in progress</string>
+</resources>
