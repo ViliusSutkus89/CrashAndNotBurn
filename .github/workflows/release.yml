@@ -20,7 +20,12 @@
 #  SOFTWARE.
 
 name: release
-on: workflow_dispatch
+on:
+  workflow_dispatch:
+    inputs:
+      RELEASE_TAG:
+        description: 'Release tag'
+        required: true
 
 permissions:
   actions: none
@@ -53,4 +58,5 @@ jobs:
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           draft: true
+          tag: ${{ github.event.inputs.RELEASE_TAG }}
           artifacts: "app/build/outputs/apk/debug/*.apk,app/build/reports/lint-results-release.html"
