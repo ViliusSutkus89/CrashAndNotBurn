@@ -54,7 +54,6 @@ jobs:
           path: app/build/outputs/apk/debug/*.apk
           if-no-files-found: error
 
-      - run: mv application/app/build/reports/lint-results-release.html application-lint-report.html
       - uses: actions/upload-artifact@v2
         with:
           name: lint-results-release.html
